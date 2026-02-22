@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="topicosStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/Logo (Caderno Azul).png" id="logo"></a>
+        <nav class="menu">
+            <ul class="nav-left">
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">How use?</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <ul class="nav-right" id="navRight">
+                <!-- CONTEÚDO SERÁ PREENCHIDO PELO JAVASCRIPT -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Área específica para a página de tópicos -->
+    <section class="topicos-header">
+        <h1 id="cardTitle">Carregando...</h1>
+
+        <!-- Barra de progresso -->
+        <div class="progress-container">
+            <div id="progressBar" class="progress-bar">0%</div>
+        </div>
+    </section>
+
+    <!-- Botões específicos para tópicos -->
+    <section class="topicos-buttons">
+        <button id="addSubBtn">+ Add subtopic</button>
+        <button id="backBtn">← Back</button>
+    </section>
+
+    <!-- Container para os cards de subtópicos -->
+    <div class="subtopics-container">
+        <!-- os cards de subtópicos vão aparecer aqui -->
+    </div>
+
+
+</body>
+<script src="header.js"></script>
+<script src="topicosScript.js"></script>
+
+</html>

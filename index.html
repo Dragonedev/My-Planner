@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner Project</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/Logo (Caderno Azul).png" id="logo"></a>
+        <nav class="menu">
+            <ul class="nav-left">
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">How use?</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <ul class="nav-right" id="navRight">
+                <!-- CONTEÚDO SERÁ PREENCHIDO PELO JAVASCRIPT -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <section class="title">
+            <h1>My Planner</h1>
+            <h2>Personal Diary</h2>
+        </section>
+        <section class="input-box">
+            <input type="text" id="textInput" placeholder="How is your plan today?">
+            <a href="login.html"><button onclick="showText()">Submit</button></a>
+        </section>
+    </section>
+
+    <section class="carousel">
+        <div><img src="https://i.pinimg.com/736x/f8/05/b7/f805b772d5f2cb15924d6cf1a510c718.jpg" id="carousel-item-1">
+            <p>Chill</p>
+        </div>
+        <div><img src="https://i.pinimg.com/1200x/6d/8e/1f/6d8e1f3127601fd6527c14f4e5920574.jpg" id="carousel-item-2">
+            <p>Study</p>
+        </div>
+        <div><img src="https://i.pinimg.com/1200x/99/2c/c6/992cc637feba2314d53fde4a34141641.jpg" id="carousel-item-3">
+            <p>Music</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="social-media">
+                <img src="img/github-icon.svg" alt="GitHub">
+                <img src="img/instagram-icon.svg" alt="Instagram">
+                <img src="img/linkedin-icon.svg" alt="LinkedIn">
+            </div>
+            <div class="technologies">
+                <img src="img/html-icon.svg" alt="HTML">
+                <img src="img/css-icon.svg" alt="CSS">
+                <img src="img/javascript-icon.svg" alt="JavaScript">
+            </div>
+        </div>
+        <p id="name">Eduardo Dragone 2026©</p>
+    </footer>
+</body>
+<script src="header.js"></script>
+<script src="indexScript.js"></script>
+
+</html>

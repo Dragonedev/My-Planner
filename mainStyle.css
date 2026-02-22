@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    background-color: rgb(222, 230, 255);
+    font-family: 'Inter', sans-serif;
+    /* texto padrão */
+}
+
+/* Header */
+header {
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* logo esquerda e nav direita */
+    padding: 13px 35px;
+    background-color: white;
+    border-radius: 35px;
+    color: rgb(0, 0, 145);
+}
+
+/* Logo */
+#logo {
+    width: 100px;
+    margin: 0 -10px 0 -20px;
+}
+
+/* Nav container */
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 20px;
+    align-items: center;
+}
+
+/* ULs */
+.menu ul,
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens */
+.menu li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    /* Medium */
+    cursor: pointer;
+}
+
+/* Links */
+nav a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+    color: #3f2ad9;
+}
+
+.nav-left {
+    gap: 8px;
+}
+
+.nav-right {
+    gap: 10px;
+}
+
+/* Botão normal */
+.btn {
+    border: 2px solid #5a3bff;
+}
+
+/* Botão Register diferente */
+.register {
+    background-color: #5a3bff;
+    color: white;
+}
+
+/* Hover geral */
+nav a:hover {
+    background-color: #2600ff;
+    color: white;
+}
+
+/* Hover do register */
+.register:hover {
+    background-color: #3f2ad9;
+}
+
+.buttons{
+    display: flex;
+    justify-content: right;
+    padding: 30px;
+    margin-right: 50px;
+    gap: 20px;
+}
+
+.buttons button{
+    border-radius: 20px;
+    color: white;
+    background-color: #2600ff;
+    width: 70px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.buttons button:hover{
+    color: #2600ff;
+    background-color: #ffffff;
+    transform: scale(1.1);
+    transition: 0.3s;
+    border: 2px solid #2600ff;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 45px;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #2600ff;
+    border-radius: 8px;
+    padding: 25px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative; /* para posicionar o botão de delete */
+}
+
+.card:hover {
+    cursor: pointer;
+    color: #2600ff;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.card button.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+    border: none;
+    border-radius: 7px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none; /* invisível por padrão */
+}
+
+.card button.delete-btn:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.card .progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.card .progress-bar-inner {
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}

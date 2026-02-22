@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    background-color: rgb(222, 230, 255);
+    font-family: 'Inter', sans-serif;
+    /* texto padrão */
+}
+
+/* Header */
+header {
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* logo esquerda e nav direita */
+    padding: 13px 35px;
+    background-color: white;
+    border-radius: 35px;
+    color: rgb(0, 0, 145);
+}
+
+/* Logo */
+#logo {
+    width: 100px;
+    margin: 0 -10px 0 -20px;
+}
+
+/* Nav container */
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 20px;
+    align-items: center;
+}
+
+/* ULs */
+.menu ul,
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens */
+.menu li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    /* Medium */
+    cursor: pointer;
+}
+
+/* Links */
+nav a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+    color: #3f2ad9;
+}
+
+.nav-left {
+    gap: 8px;
+}
+
+.nav-right {
+    gap: 10px;
+}
+
+/* Botão normal */
+.btn {
+    border: 2px solid #5a3bff;
+}
+
+/* Botão Register diferente */
+.register {
+    background-color: #5a3bff;
+    color: white;
+}
+
+/* Hover geral */
+nav a:hover {
+    background-color: #2600ff;
+    color: white;
+}
+
+/* Hover do register */
+.register:hover {
+    background-color: #3f2ad9;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    /* empilha h1, inputs, botão */
+    align-items: center;
+    /* centraliza horizontalmente */
+    gap: 30px;
+    /* espaçamento entre elementos */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #2600ff;
+    padding: 80px;
+    width: 200px;
+    /* maior para caber tudo */
+    margin: 100px auto;
+    /* centraliza na página */
+    border-radius: 8px;
+    border-radius: 10px;
+}
+
+.login-box h1 {
+    margin: 0;
+    color: #160092;
+    margin-bottom: 10px
+        /* remove margem extra do h1 */
+}
+
+.inputs-login {
+    display: flex;
+    align-items: center;
+    /* ativa flexbox */
+    flex-direction: column;
+    /* empilha os inputs verticalmente */
+    gap: 20px;
+    /* espaço entre os inputs */
+    width: 100%;
+    /* ocupa toda a largura disponível da login-box */
+}
+
+.login-box input {
+    padding: 12px 15px;
+    width: 220px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #5a3bff;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* estado normal do botão */
+.login-box button {
+    padding: 12px 15px;
+    width: 180px;
+    text-align: center;
+    background-color: rgb(4, 0, 255);
+    /* azul inicial */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 5px 10px 14px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    /* aqui que faz a animação funcionar */
+}
+
+/* estado hover */
+.login-box button:hover {
+    width: 220px;
+    background-color: rgb(30, 255, 0);
+    /* verde */
+    border-radius: 15px;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+footer {
+    background-color: #00043f;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    padding: 48.5px 0px;
+    min-height: 100px
+        /* para o texto embaixo */
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    /* redes sociais à esquerda, tecnologias à direita */
+    align-items: center;
+    margin-bottom: 20px;
+    /* espaço entre as imagens e o texto */
+}
+
+.social-media,
+.technologies {
+    display: flex;
+    /* ativa flexbox nas imagens */
+    gap: 15px;
+    /* espaçamento entre cada imagem */
+    margin: 20px 50px 10px 50px;
+}
+
+.social-media img,
+.technologies img {
+    width: 40px;
+    margin: 0 5px;
+    gap: 10px;
+    filter: saturate(0);
+    /* espaço entre as imagens */
+}
+
+.social-media img:hover,
+.technologies img:hover {
+    width: 40px;
+    margin: 0 5px;
+    transform: scale(1.1);
+    filter: saturate(1);
+    transition: 0.2s;
+    /* espaço entre as imagens */
+}
+
+#name {
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0;
+}

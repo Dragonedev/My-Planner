@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <!-- ADICIONE O CSS DO LOADER AQUI -->
+    <link rel="stylesheet" href="loader.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ADICIONE O LOADER OVERLAY AQUI (depois do body) -->
+    <div class="loader-overlay" id="loaderOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <a href="index.html"><img src="img/Logo (Caderno Azul).png" id="logo"></a>
+        <nav class="menu">
+            <ul class="nav-left">
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">How use?</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <ul class="nav-right">
+                <li><a href="login.html" class="btn">Sign in</a></li>
+                <li><a href="#" class="btn-register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-box">
+        <h1>Login</h1>
+        <div class="inputs-login">
+            <input type="text" id="nickInput" placeholder="user@123">
+            <input type="password" id="passwordInput" placeholder="Password123?">
+        </div>
+        <button id="loginBtn">Enter</button>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="social-media">
+                <img src="img/github-icon.svg" alt="GitHub">
+                <img src="img/instagram-icon.svg" alt="Instagram">
+                <img src="img/linkedin-icon.svg" alt="LinkedIn">
+            </div>
+            <div class="technologies">
+                <img src="img/html-icon.svg" alt="HTML">
+                <img src="img/css-icon.svg" alt="CSS">
+                <img src="img/javascript-icon.svg" alt="JavaScript">
+            </div>
+        </div>
+        <p id="name">Eduardo Dragone 2026©</p>
+    </footer>
+
+    <!-- ADICIONE O SCRIPT DO LOADER AQUI (antes do loginScript) -->
+    <script src="loader.js"></script>
+    <script src="loginScript.js"></script>
+</body>
+
+</html>

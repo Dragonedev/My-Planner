@@ -1,0 +1,276 @@
+/* ============================================
+   LOADERS ANIMADOS - ESTILOS COMPLETOS
+   ============================================ */
+
+/* Overlay do loader (fundo escuro) */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+/* Loader principal - Spinner bonito */
+.loader {
+    width: 70px;
+    height: 70px;
+    border: 5px solid rgba(255,255,255,0.3);
+    border-top: 5px solid #4CAF50;
+    border-right: 5px solid #45a049;
+    border-bottom: 5px solid #3d8b40;
+    border-radius: 50%;
+    animation: spin 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+}
+
+/* Loader alternativo - Pontinhos */
+.loader-dots {
+    display: flex;
+    gap: 12px;
+}
+
+.loader-dots div {
+    width: 16px;
+    height: 16px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    animation: bounce 0.6s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+}
+
+.loader-dots div:nth-child(2) {
+    animation-delay: 0.2s;
+    background-color: #45a049;
+}
+
+.loader-dots div:nth-child(3) {
+    animation-delay: 0.4s;
+    background-color: #3d8b40;
+}
+
+/* Loader de página inteira */
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.page-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Loader para cards (esqueleto) */
+.card-loader {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Loader para botões */
+.button-loader {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Loader de progresso */
+.progress-loader {
+    width: 100%;
+    height: 4px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2px;
+}
+
+.progress-loader::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #45a049, #3d8b40);
+    animation: progress 1.5s infinite;
+    border-radius: 2px;
+}
+
+/* Loader personalizado com logo */
+.logo-loader {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.logo-loader img {
+    width: 100px;
+    height: 100px;
+    animation: pulse 1.5s ease-in-out infinite;
+    margin-bottom: 20px;
+}
+
+.logo-loader p {
+    font-size: 18px;
+    color: #4CAF50;
+    font-weight: 500;
+    animation: fadeInOut 1.5s ease-in-out infinite;
+    margin: 0;
+}
+
+/* Loader de ondas */
+.wave-loader {
+    display: flex;
+    gap: 5px;
+}
+
+.wave-loader div {
+    width: 8px;
+    height: 30px;
+    background-color: #4CAF50;
+    animation: wave 1s ease-in-out infinite;
+}
+
+.wave-loader div:nth-child(2) { animation-delay: 0.1s; }
+.wave-loader div:nth-child(3) { animation-delay: 0.2s; }
+.wave-loader div:nth-child(4) { animation-delay: 0.3s; }
+.wave-loader div:nth-child(5) { animation-delay: 0.4s; }
+
+/* Loader circular */
+.circular-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: conic-gradient(#4CAF50 0deg, #45a049 90deg, #3d8b40 180deg, #2e7d32 270deg, #4CAF50 360deg);
+    mask: radial-gradient(circle at 50% 50%, transparent 60%, black 61%);
+    animation: spin 2s linear infinite;
+}
+
+/* Loader de texto */
+.text-loader {
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 30px;
+}
+
+.text-loader::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #4CAF50;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* ============================================
+   ANIMAÇÕES
+   ============================================ */
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { 
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    50% { 
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@keyframes progress {
+    0% { left: -50%; }
+    100% { left: 100%; }
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% { 
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+@keyframes wave {
+    0%, 100% { transform: scaleY(0.5); }
+    50% { transform: scaleY(1.5); }
+}
+
+/* Loader de partículas */
+.particle-loader {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    animation: particle 1.5s infinite;
+}
+
+.particle:nth-child(1) { top: 0; left: 50%; animation-delay: 0s; }
+.particle:nth-child(2) { top: 50%; right: 0; animation-delay: 0.2s; }
+.particle:nth-child(3) { bottom: 0; left: 50%; animation-delay: 0.4s; }
+.particle:nth-child(4) { top: 50%; left: 0; animation-delay: 0.6s; }
+
+@keyframes particle {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.5); opacity: 1; }
+}
