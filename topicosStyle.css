@@ -96,6 +96,7 @@ nav a:hover {
 }
 
 #cardTitle {
+  margin-top: 80px;
   font-size: 2em;
   color: #333;
   margin-bottom: 15px;
